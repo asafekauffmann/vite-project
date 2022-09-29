@@ -1,0 +1,49 @@
+{
+  "Basic React Component": {
+    "prefix": "rc",
+    "body": [
+      "",
+      "type Props = {}",
+      "",
+      "export function ${TM_DIRECTORY/.*[\\\\|\\/]+(.*)/$1/}({}: Props) {",
+      "  return (",
+      "    <div>",
+      "    </div>",
+      "  )",
+      "}"
+    ],
+    "description": "Basic React Component"
+  },
+
+  "Basic Styled React Component": {
+    "prefix": "rcs",
+    "body": [
+      "import { Container } from './styles'",
+      "",
+      "type Props = {}",
+      "",
+      "export function ${TM_DIRECTORY/.*[\\\\|\\/]+(.*)/$1/}({}: Props) {",
+      "  return (",
+      "    <Container>",
+      "    </Container>",
+      "  )",
+      "}"
+    ],
+    "description": "Basic React Component"
+  },
+
+  "Basic React Styled Component": {
+    "prefix": "rs",
+    "body": [
+      "import tw from 'twin.macro'",
+      "",
+      "export const Container = tw.div`",
+      "  flex",
+      "  justify-center",
+      "  items-center",
+      "`",
+      ""
+    ],
+    "description": "Basic React Styled Component"
+  }
+}
