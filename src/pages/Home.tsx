@@ -1,6 +1,6 @@
-import reactLogo from '../assets/react.svg'
+import reactLogo from '@/assets/react.svg'
 import { useRecoilState } from 'recoil'
-import { counterState } from '../store'
+import { counterState } from '@/store'
 
 export function Home() {
   const [count, setCount] = useRecoilState(counterState)
