@@ -3,9 +3,7 @@ import reactLogo from '../assets/react.svg'
 export function Home() {
   return (
     <div>
-      <h1 className="text-3xl font-bold underline">
-        Hello world!
-      </h1>
+      <h1 className="text-3xl font-bold underline">Hello world!</h1>
       <div>
         <a href="https://vitejs.dev" target="_blank">
           <img src="/vite.svg" alt="Vite logo" />
